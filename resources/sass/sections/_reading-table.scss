@@ -1,0 +1,23 @@
+.reading-table{
+    max-width: 600px;
+    width: 100%;
+
+    .order-by{
+        cursor: pointer;
+    }
+
+    &.table-list{
+        > div:nth-child(even){
+            background-color: #f4f4f4;
+        }
+    }
+
+}
+
+.handle{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    cursor: ns-resize;
+
+}

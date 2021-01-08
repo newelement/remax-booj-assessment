@@ -1,0 +1,90 @@
+.action-message{
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    padding: 24px 32px;
+    transform: translate(-50%, 100%);
+    background-color: rgba(000,000,000, .85);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.25rem;
+    transition: transform .35s ease, opacity .25s ease;
+    opacity: 0;
+
+    &.show{
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+}
+
+.search-list{
+    background-color: #f3f3f3;
+    padding: 24px 12px;
+    margin-bottom: 32px;
+
+    li{
+        width: 20%;
+        padding: 12px 24px;
+        text-align: center;
+        position: relative;
+
+        @media(max-width: 900px){
+            width: 50%;
+        }
+
+        img{
+            margin-bottom: 6px;
+            vertical-align: baseline;
+        }
+
+        p{
+            font-size: 1rem;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .item-actions{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(000,000,000, .25);
+            transition: opacity .35s ease;
+            opacity: 0;
+            //visibility: hidden;
+            z-index: 1;
+        }
+
+        a{
+            display: block;
+            width: 90%;
+            text-align: center;
+            padding: 8px 0;
+            color: #444;
+            margin: 8px 0;
+            font-size: .75rem;
+            font-weight: 700;
+            background-color: #fff;
+            border: 2px solid #222;
+            text-transform: uppercase;
+            transition: background-color .25s ease, color .25s ease;
+
+            &:hover{
+                background-color: $marvelred;
+                color: #fff;;
+            }
+        }
+
+        &:hover{
+            .item-actions{
+                //visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+}

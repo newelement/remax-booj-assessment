@@ -1,0 +1,8 @@
+{
+  "identifier" : "CCA1C7C7-DF3A-443B-A853-E9E1A7571C5D",
+  "ignoredFilePatterns" : [
+    "node_modules"
+  ],
+  "server" : "Readinglist",
+  "usesPublishing" : true
+}

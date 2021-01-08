@@ -1,0 +1,21 @@
+.header{
+    background-color: #fff;
+    border-bottom: 3px solid $marvelred;
+    .logo{
+        max-width: 140px;
+        img{
+            vertical-align: baseline;
+        }
+        span{
+            display: none;
+        }
+    }
+}
+
+.main-nav{
+    a{
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing:  1px;
+    }
+}
